@@ -5,6 +5,7 @@ DROP TABLE IF EXISTS employees;
 DROP TABLE IF EXISTS salaries;
 DROP TABLE IF EXISTS titles;
 
+-- Create tables for analysis with corresponding CSV files.
 CREATE TABLE departments (
 	dept_no VARCHAR(5) NOT NULL,
 	dept_name VARCHAR(30) NOT NULL
@@ -46,3 +47,11 @@ CREATE TABLE titles (
 	from_date DATE NOT NULL,
 	to_date DATE NOT NULL
 );
+
+-- Confirm data properly imported into tables.
+SELECT * FROM departments;
+SELECT * FROM dept_emp;
+SELECT * FROM dept_manager;
+SELECT * FROM employees;
+SELECT * FROM salaries;
+SELECT * FROM titles;
