@@ -13,36 +13,36 @@ CREATE TABLE departments (
 CREATE TABLE dept_emp (
 	emp_no INT NOT NULL,
 	dept_no VARCHAR(5) NOT NULL,
-	from_date date NOT NULL,
-	to_date date NOT NULL
+	from_date DATE NOT NULL,
+	to_date DATE NOT NULL
 );
 
 CREATE TABLE dept_manager (
 	dept_no VARCHAR(5) NOT NULL,
 	emp_no INT NOT NULL,
-	from_date date NOT NULL,
-	to_date date NOT NULL
+	from_date DATE NOT NULL,
+	to_date DATE NOT NULL
 );
 
 CREATE TABLE employees (
 	emp_no INT NOT NULL,
-	birth_date date NOT NULL,
+	birth_date DATE NOT NULL,
 	first_name VARCHAR(45) NOT NULL,
 	last_name VARCHAR(45) NOT NULL,
 	gender VARCHAR(5) NOT NULL,
-	hire_date date NOT NULL
+	hire_date DATE NOT NULL
 );
 
 CREATE TABLE salaries (
 	emp_no INT NOT NULL,
 	salary INT NOT NULL,
-	from_date date NOT NULL,
-	to_date date NOT NULL
+	from_date DATE NOT NULL,
+	to_date DATE NOT NULL
 );
 
 CREATE TABLE titles (
 	emp_no INT NOT NULL,
 	title VARCHAR(20) NOT NULL,
-	from_date date NOT NULL,
-	to_date date NOT NULL
+	from_date DATE NOT NULL,
+	to_date DATE NOT NULL
 );
